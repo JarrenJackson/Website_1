@@ -1,0 +1,70 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NKC Events</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <header class="header" id="header">
+            <button id="butAdd" class="headerButton" aria-label="Refresh" onclick="openNav()"></button>
+            <h1 class="header__title">NKC Event Manage</h1>
+            <button id="butRefresh" class="headerButton" aria-label="Add"></button>
+        </header>
+    </head>
+    <body>
+        <div id="sidenavmask" onclick="closeNav()"></div>
+        <div id="hamMenu" class="sidenav">
+            <center><img src="/images/logo.jpg" align="center"></center>
+            <a href="#"><i class="material-icons">check_circle</i>Event Check-in</a>
+            <a href="#"><i class="material-icons">mode_edit</i>Event Manage</a>
+            <a href="#"><i class="material-icons">info</i>About</a>
+        </div>
+        <div id="Current"> 
+            <b class="cardCat">Current</b>
+            <div id="card" class="card">
+                <div id="cardContent" class="cardContent">
+                    <heading>Northland Coffee Connect</heading>
+                    <b id="cardBody">Entreprenuers and business owners in Clay County, Missouri should consider checking out the Northland Kansas City Coffee Connect. According to a flyer obtained at the May 27 event, the weekly gathering is intended to give start-up businesses the opportunity to become more well-known and perhaps gain customers and helpful advice.</b>
+                    <button id="checkin">Check-in</button>
+                    <button id="guests">Guests</button>
+                </div>
+            </div>
+        </div>
+        <div id="Previous">
+            <b class="cardCat">Previous</b>
+            <div id="card" class="card">
+                <div id="cardContent" class="cardContent">
+                    <heading>Northland Coffee Connect</heading>
+                    <b id="cardBody">Entreprenuers and business owners in Clay County, Missouri should consider checking out the Northland Kansas City Coffee Connect. According to a flyer obtained at the May 27 event, the weekly gathering is intended to give start-up businesses the opportunity to become more well-known and perhaps gain customers and helpful advice.</b>
+                    <button id="checkin">Check-in</button>
+                    <button id="guests">Guests</button>
+                </div>
+            </div>
+            <div id="card" class="card">
+                <div id="cardContent" class="cardContent">
+                    <heading>Northland Coffee Connect</heading>
+                    <b id="cardBody">Entreprenuers and business owners in Clay County, Missouri should consider checking out the Northland Kansas City Coffee Connect. According to a flyer obtained at the May 27 event, the weekly gathering is intended to give start-up businesses the opportunity to become more well-known and perhaps gain customers and helpful advice.</b>
+                    <button id="checkin">Check-in</button>
+                    <button id="guests">Guests</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+    var menu = document.getElementById("hamMenu");
+    var mask = document.getElementById("sidenavmask");
+  
+    function openNav() { 
+        menu.style.left = "0";
+        mask.style.visibility = "visible";
+        mask.style.backgroundColor = "rgba(0,0,0,.7)"
+    }
+    function closeNav() { 
+        menu.style.left = "-250";
+        mask.style.visibility = "hidden";
+        mask.style.backgroundColor = "rgba(0,0,0,0.0)"
+    }
+    </script>
+</html>
